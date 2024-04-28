@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Historia de HTML y CSS</title>
+<style>
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+}
+
+.timeline {
+  position: relative;
+  list-style: none;
+  padding: 0;
+}
+
+.timeline li {
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.timeline li:nth-child(odd) {
+  float: left;
+  clear: both;
+  text-align: right;
+}
+
+.timeline li:nth-child(even) {
+  float: right;
+  clear: both;
+  text-align: left;
+}
+
+/* Estilos específicos para el contenido */
+.timeline .event {
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.timeline .date {
+  font-weight: bold;
+  color: #555;
+}
+
+.timeline .description {
+  margin-top: 10px;
+  color: #666;
+}
+
+/* Media queries para diseño responsivo */
+@media (max-width: 600px) {
+  .timeline li {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Historia de HTML y CSS</h1>
+  <ul class="timeline">
+    <li>
+      <div class="event">
+        <div class="date">1991</div>
+        <div class="description">
+          <p>HTML 1.0 - Primer estándar de HTML.</p>
+        </div>
+      </div>
+    </li>
+    <li>
+      <div class="event">
+        <div class="date">1996</div>
+        <div class="description">
+          <p>CSS - Introducción de un lenguaje para estilizar documentos HTML.</p>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+
+</body>
+</html>
